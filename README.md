@@ -24,14 +24,14 @@ pip3 install ply
 3. Initialize repo:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r14
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r18
 curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
 ```
 
 You can also reduce download size by creating a shallow clone and removing unneeded projects (optional):
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r14 --depth=1
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r18 --depth=1
 curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/remove_projects.xml
 ```
 
