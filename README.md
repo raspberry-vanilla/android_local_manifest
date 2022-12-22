@@ -1,13 +1,6 @@
 ### Device specific configuration to build AOSP Android 13 for Raspberry Pi 4.
 
-#### Wiki:
-
-- TODO
-
-#### Issues:
-
-- [Android](https://github.com/raspberry-vanilla/android_local_manifest/issues)
-- [Linux kernel](https://github.com/raspberry-vanilla/android_kernel_manifest/issues)
+***
 
 ### How to build:
 
@@ -56,3 +49,21 @@ make bootimage systemimage vendorimage -j$(nproc)
 ```
 
 Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-13.0).
+
+***
+
+### Issues:
+
+- [Android](https://github.com/raspberry-vanilla/android_local_manifest/issues)
+- [Linux kernel](https://github.com/raspberry-vanilla/android_kernel_manifest/issues)
+
+***
+
+### Wiki:
+
+- [Audio](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Audio)
+- [DSI display](https://github.com/raspberry-vanilla/android_local_manifest/wiki/DSI-display)
+- [HDMI display](https://github.com/raspberry-vanilla/android_local_manifest/wiki/HDMI-display)
+- [Interfaces](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Interfaces)
+- [USB boot](https://github.com/raspberry-vanilla/android_local_manifest/wiki/USB-boot)
+- [Video decoding](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Video-decoding)
