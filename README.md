@@ -6,12 +6,11 @@
 
 1. Establish [Android build environment](https://source.android.com/setup/initializing) and install [repo](https://source.android.com/docs/setup/develop#installing-repo).
 
-2. Install additional packages (TODO: possibly non-exhaustive):
+2. Install additional packages:
 
 ```
-sudo apt-get install bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build
-sudo snap install meson
-pip3 install ply
+sudo apt-get install bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build pkg-config python3-pip
+pip3 install meson mako jinja2 ply pyyaml
 ```
 
 3. Initialize repo:
