@@ -34,7 +34,6 @@
   </project>
 
   <!-- Camera -->
-  <project path="external/boost" name="raspberry-vanilla/android_external_boost" remote="github" revision="android-13.0" />
   <project path="external/libcamera" name="raspberry-vanilla/android_external_libcamera" remote="github" revision="android-13.0" />
   <project path="external/libyaml" name="raspberry-vanilla/android_external_libyaml" remote="github" revision="android-13.0" />
   <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="android-13.0" />
