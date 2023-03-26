@@ -39,6 +39,7 @@
   <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="android-13.0" />
 
   <!-- FFmpeg -->
+  <project path="external/dav1d" name="raspberry-vanilla/android_external_dav1d" remote="github" revision="android-13.0" />
   <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="android-13.0" />
   <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-13.0" />
   <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-13.0" />
