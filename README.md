@@ -9,7 +9,7 @@
 2. Install additional packages:
 
 ```
-sudo apt-get install bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build pkg-config python3-pip
+sudo apt-get install bc coreutils dosfstools e2fsprogs fdisk kpartx mtools ninja-build pkg-config python3-pip libncurses5
 sudo pip3 install meson mako jinja2 ply pyyaml
 ```
 
