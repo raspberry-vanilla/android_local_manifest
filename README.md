@@ -20,10 +20,11 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.
 curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/manifest_brcm_rpi4.xml
 ```
 
-You can also reduce download size by creating a shallow clone and removing unneeded projects (optional):
+Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.0_r22 --depth=1
+curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/manifest_brcm_rpi4.xml
 curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-12.1/remove_projects.xml
 ```
 
