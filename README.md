@@ -16,14 +16,14 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 3. Initialize repo:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r52
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r61
 curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r52 --depth=1
+repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r61 --depth=1
 curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
 curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/remove_projects.xml
 ```
