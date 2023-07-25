@@ -34,15 +34,35 @@ curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https:/
 repo sync
 ```
 
-5. Compile:
+5. Setup Android build environment:
 
 ```
 . build/envsetup.sh
+```
+
+6. Select build target:
+
+Tablet UI:
+```
 lunch aosp_rpi4-userdebug
+```
+
+Android TV:
+```
+lunch aosp_rpi4_tv-userdebug
+```
+
+Android Automotive:
+```
+lunch aosp_rpi4_car-userdebug
+```
+
+7. Compile:
+```
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-6. Make flashable image:
+8. Make flashable image:
 
 ```
 ./rpi4-mkimg.sh
