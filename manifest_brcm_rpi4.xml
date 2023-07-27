@@ -13,10 +13,6 @@
   <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="android-13.0" />
   <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="android-13.0" />
 
-  <!-- Bluetooth -->
-  <remove-project name="platform/hardware/interfaces" />
-  <project path="hardware/interfaces" name="raspberry-vanilla/android_hardware_interfaces" remote="github" revision="android-13.0" />
-
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
