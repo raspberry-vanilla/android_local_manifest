@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 13 for Raspberry Pi 4.
+### Device specific configuration to build AOSP Android 14 for Raspberry Pi 4.
 
 ***
 
@@ -16,16 +16,16 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 3. Initialize repo:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r75
-curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
+repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r1
+curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0/manifest_brcm_rpi4.xml
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r75 --depth=1
-curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
-curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/remove_projects.xml
+repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r1 --depth=1
+curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0/manifest_brcm_rpi4.xml
+curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-14.0/remove_projects.xml
 ```
 
 4. Sync source code:
@@ -68,7 +68,7 @@ make bootimage systemimage vendorimage -j$(nproc)
 ./rpi4-mkimg.sh
 ```
 
-Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-13.0).
+Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-14.0).
 
 ***
 
