@@ -2,6 +2,8 @@
 
 ***
 
+NOTE: Raspberry Vanilla `android-13.0` branch is no longer maintained. Consider using newer AOSP versions.
+
 ### How to build:
 
 1. Establish [Android build environment](https://source.android.com/setup/initializing) and install [repo](https://source.android.com/docs/setup/develop#installing-repo).
