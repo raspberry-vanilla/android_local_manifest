@@ -67,4 +67,5 @@ Also look into [Linux kernel build instructions](https://github.com/raspberry-va
 - [HDMI-CEC](https://github.com/raspberry-vanilla/android_local_manifest/wiki/HDMI-CEC)
 - [Interfaces](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Interfaces)
 - [USB boot](https://github.com/raspberry-vanilla/android_local_manifest/wiki/USB-boot)
+- [Utilities](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Utilities)
 - [Video decoding & encoding](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Video-decoding-&-encoding)
