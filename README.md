@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 14 for Raspberry Pi 4.
+### Device specific configuration to build AOSP Android 14 for Raspberry Pi 4 and Raspberry Pi 5.
 
 ***
 
@@ -40,32 +40,40 @@ repo sync
 . build/envsetup.sh
 ```
 
-6. Select build target:
+6. Select the device (`rpi4` or `rpi5`) and build target (tablet UI, `tv` for Android TV, or `car` for Android Automotive):
 
-Tablet UI:
 ```
 lunch aosp_rpi4-userdebug
 ```
-
-Android TV:
 ```
 lunch aosp_rpi4_tv-userdebug
 ```
-
-Android Automotive:
 ```
 lunch aosp_rpi4_car-userdebug
 ```
+```
+lunch aosp_rpi5-userdebug
+```
+```
+lunch aosp_rpi5_tv-userdebug
+```
+```
+lunch aosp_rpi5_car-userdebug
+```
 
 7. Compile:
+
 ```
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-8. Make flashable image:
+8. Make flashable image for the device (`rpi4` or `rpi5`):
 
 ```
 ./rpi4-mkimg.sh
+```
+```
+./rpi5-mkimg.sh
 ```
 
 Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-14.0).
