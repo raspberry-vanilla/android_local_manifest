@@ -6,7 +6,11 @@
   <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
   </project>
+  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
+    <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
+  </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
+  <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-14.0" />
   <project path="vendor/brcm" name="raspberry-vanilla/proprietary_vendor_brcm" remote="github" revision="android-14.0" />
 
   <!-- Audio -->
@@ -31,6 +35,7 @@
 
   <!-- Camera -->
   <project path="external/libcamera" name="raspberry-vanilla/android_external_libcamera" remote="github" revision="android-14.0" />
+  <project path="external/libpisp" name="raspberry-vanilla/android_external_libpisp" remote="github" revision="android-14.0" />
   <project path="external/libyaml" name="raspberry-vanilla/android_external_libyaml" remote="github" revision="android-14.0" />
   <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="android-14.0" />
 
