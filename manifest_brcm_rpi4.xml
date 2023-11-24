@@ -55,7 +55,9 @@
   <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-14.0" />
 
   <!-- Wifi -->
+  <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/packages/modules/Wifi" />
+  <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0" />
 
 </manifest>
