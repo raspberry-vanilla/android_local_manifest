@@ -65,7 +65,4 @@
   <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0" />
 
-  <!-- Mockito-Kotlin -->
-  <project path="external/mockito-kotlin" name="platform/external/mockito-kotlin" revision="main" />
-
 </manifest>
