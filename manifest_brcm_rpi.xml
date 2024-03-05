@@ -42,7 +42,6 @@
   <!-- FFmpeg -->
   <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="android-14.0" />
   <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-14.0" />
-  <project path="external/libdav1d" name="raspberry-vanilla/android_external_libdav1d" remote="github" revision="android-14.0" />
   <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-14.0" />
 
   <!-- Graphics -->
