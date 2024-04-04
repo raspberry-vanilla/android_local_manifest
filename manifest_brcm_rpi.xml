@@ -3,10 +3,10 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
+  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0.0_r22" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
   </project>
-  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
+  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0.0_r22" >
     <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
   </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
@@ -20,7 +20,7 @@
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
-  <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-14.0" >
+  <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-14.0.0_r22" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -28,7 +28,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-14.0" >
+  <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-14.0.0_r22" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -40,8 +40,8 @@
   <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="android-14.0" />
 
   <!-- FFmpeg -->
-  <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="android-14.0" />
-  <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-14.0" />
+  <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="android-14.0.0_r22" />
+  <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-14.0.0_r22" />
   <project path="external/libdav1d" name="raspberry-vanilla/android_external_libdav1d" remote="github" revision="android-14.0" />
   <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-14.0" />
 
@@ -53,16 +53,16 @@
   <project path="external/drm_hwcomposer" name="raspberry-vanilla/android_external_drm_hwcomposer" remote="github" revision="android-14.0" />
   <project path="external/libdrm" name="raspberry-vanilla/android_external_libdrm" remote="github" revision="android-14.0" />
   <project path="external/mesa3d" name="raspberry-vanilla/android_external_mesa3d" remote="github" revision="android-14.0" />
-  <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-14.0" />
+  <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-14.0.0_r22" />
 
   <!-- v4l2_codec2 -->
   <remove-project name="platform/external/v4l2_codec2" />
-  <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-14.0" />
+  <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-14.0.0_r22" />
 
   <!-- Wifi -->
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/packages/modules/Wifi" />
-  <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0" />
-  <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0" />
+  <project path="external/wpa_supplicant_8" name="raspberry-vanilla/android_external_wpa_supplicant_8" remote="github" revision="android-14.0.0_r22" />
+  <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-14.0.0_r22" />
 
 </manifest>
