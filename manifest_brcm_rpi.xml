@@ -4,10 +4,10 @@
 
   <!-- Raspberry Pi -->
   <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
-    <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
+    <linkfile dest="rpi4-mkimg.sh" src="mkimg.sh" />
   </project>
   <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
-    <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
+    <linkfile dest="rpi5-mkimg.sh" src="mkimg.sh" />
   </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
   <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-14.0" />
@@ -21,16 +21,16 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-14.0" >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
   </project>
   <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-14.0" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
 
   <!-- Camera -->
