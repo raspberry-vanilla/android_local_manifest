@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remove-project name="device/google/akita" />
+  <remove-project name="device/google/akita-sepolicy" />
+  <remove-project name="device/google/akita-kernel" />
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
   <remove-project name="device/google/barbet" />
@@ -78,7 +81,6 @@
   <remove-project name="platform/hardware/qcom/sm8150/vr" />
   <remove-project name="platform/hardware/qcom/sm8150p/gps" />
   <remove-project name="platform/hardware/qcom/wlan" />
-  <remove-project name="platform/hardware/st/nfc" />
   <remove-project name="platform/hardware/st/secure_element" />
   <remove-project name="platform/hardware/st/secure_element2" />
   <remove-project name="platform/hardware/samsung/nfc" />
