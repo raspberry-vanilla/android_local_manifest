@@ -29,8 +29,8 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-14.0" >
-    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
-    <linkfile src="bazel.BUILD" dest="BUILD" />
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Camera -->
