@@ -3,7 +3,7 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Utilities -->
-  <project path="external/raspberrypi-utils" name="raspberry-vanilla/android_external_raspberrypi-utils" remote="github" revision="android-14.0" />
-  <project path="external/v4l-utils" name="raspberry-vanilla/android_external_v4l-utils" remote="github" revision="android-14.0" />
+  <project path="external/raspberrypi-utils" name="raspberry-vanilla/android_external_raspberrypi-utils" remote="github" revision="android-15.0" />
+  <project path="external/v4l-utils" name="raspberry-vanilla/android_external_v4l-utils" remote="github" revision="android-15.0" />
 
 </manifest>
