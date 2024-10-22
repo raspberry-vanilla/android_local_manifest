@@ -2,9 +2,9 @@
 
 ***
 
-### How to build:
+### How to build (Ubuntu 22.04 LTS):
 
-1. Establish [Android build environment](https://source.android.com/setup/initializing) and install [repo](https://source.android.com/docs/setup/develop#installing-repo).
+1. Establish [Android build environment](https://source.android.com/docs/setup/start/requirements).
 
 2. Install additional packages:
 
