@@ -2,6 +2,8 @@
 
 ***
 
+NOTE: Raspberry Vanilla `android-15.0.0_r4` branch is not maintained. This branch was only created for backup purposes during Android QPR update. Using this branch is not supported. Consider using newer AOSP versions.
+
 ### How to build (Ubuntu 22.04 LTS):
 
 1. Establish [Android build environment](https://source.android.com/docs/setup/start/requirements).
