@@ -2,6 +2,8 @@
 
 ***
 
+NOTE: Raspberry Vanilla `android-15.0.0_r14` branch is not maintained. This branch was only created for backup purposes during Android QPR update. Using this branch is not supported. Consider using newer AOSP versions.
+
 ### How to build (Ubuntu 22.04 LTS):
 
 1. Establish [Android build environment](https://source.android.com/docs/setup/start/requirements).
@@ -17,15 +19,15 @@ sudo pip3 install dataclasses jinja2 mako meson ply pyyaml
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r14
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0.0_r14/manifest_brcm_rpi.xml --create-dirs
 ```
 
 Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r14 --depth=1
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/manifest_brcm_rpi.xml --create-dirs
-curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0/remove_projects.xml
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0.0_r14/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-15.0.0_r14/remove_projects.xml
 ```
 
 4. Sync source code:
