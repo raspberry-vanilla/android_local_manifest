@@ -5,9 +5,11 @@
   <!-- Raspberry Pi -->
   <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-14.0" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
+    <linkfile src="wrimg.sh" dest="rpi4-wrimg.sh" />
   </project>
   <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-14.0" >
     <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
+    <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
   </project>
   <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-14.0" />
   <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-14.0" />
