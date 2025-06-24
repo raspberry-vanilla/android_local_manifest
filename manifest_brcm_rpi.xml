@@ -48,11 +48,10 @@
 
   <!-- Graphics -->
   <remove-project name="platform/external/drm_hwcomposer" />
-  <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/minigbm" />
   <project path="external/drm_hwcomposer" name="raspberry-vanilla/android_external_drm_hwcomposer" remote="github" revision="android-15.0" />
   <project path="external/libdisplay-info" name="platform/external/libdisplay-info" remote="aosp" revision="26677e2a01d937c837cb1789a776463ed18263ac" />
-  <project path="external/mesa3d" name="raspberry-vanilla/android_external_mesa3d" remote="github" revision="android-15.0" />
+  <project path="external/mesa3d-rpi" name="raspberry-vanilla/android_external_mesa3d-rpi" remote="github" revision="android-15.0" />
   <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-15.0" />
 
   <!-- v4l2_codec2 -->
