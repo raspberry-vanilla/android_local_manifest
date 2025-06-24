@@ -9,7 +9,7 @@
 2. Install additional packages:
 
 ```
-sudo apt-get install coreutils dosfstools e2fsprogs fdisk kpartx mtools rsync
+sudo apt-get install dosfstools e2fsprogs fdisk kpartx mtools rsync
 ```
 
 3. Initialize repo:
