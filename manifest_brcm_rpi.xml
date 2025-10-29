@@ -58,8 +58,4 @@
   <remove-project name="platform/external/v4l2_codec2" />
   <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-15.0" />
 
-  <!-- Wifi -->
-  <remove-project name="platform/packages/modules/Wifi" />
-  <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-15.0" />
-
 </manifest>
