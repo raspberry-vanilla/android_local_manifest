@@ -2,6 +2,8 @@
 
 ***
 
+NOTE: Raspberry Vanilla `android-15.0` branch is no longer maintained. Consider using newer AOSP versions.
+
 ### How to build (Ubuntu 22.04 LTS):
 
 1. Establish [Android build environment](https://source.android.com/docs/setup/start/requirements).
