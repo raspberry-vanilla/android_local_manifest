@@ -3,26 +3,26 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-16.0" >
+  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="37b8d116fe7de0ab5b625f04e53d9af9d062359f" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
     <linkfile src="wrimg.sh" dest="rpi4-wrimg.sh" />
   </project>
-  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="android-16.0" >
+  <project path="device/brcm/rpi5" name="raspberry-vanilla/android_device_brcm_rpi5" remote="github" revision="6ef087c43c8859520ad32720f745cad602548771" >
     <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
     <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
   </project>
-  <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-16.0" />
-  <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-16.0" />
-  <project path="vendor/brcm" name="raspberry-vanilla/proprietary_vendor_brcm" remote="github" revision="android-16.0" />
+  <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="b96e901330483afc2ad9457bd469a1ae124edca1" />
+  <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="ffcd8e4d5b73a0f3f82a6ab2ae6123cd12a447cf" />
+  <project path="vendor/brcm" name="raspberry-vanilla/proprietary_vendor_brcm" remote="github" revision="fa15b01af4ff0bc0ce48a7c49040fdad0bfd7b5b" />
 
   <!-- Audio -->
-  <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="android-16.0" />
-  <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="android-16.0" />
+  <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="62dadb2c92495707624eff53c77648fb947d9592" />
+  <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="86b21a26f31867e491b20872f417d5c64b933c2b" />
 
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
-  <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-16.0" >
+  <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="223617d996183216c956cf258b69a1772ba89ceb" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -30,31 +30,31 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="android-16.0" >
+  <project path="build/soong" name="raspberry-vanilla/android_build_soong" remote="github" revision="be6971ec496f42008bcdef95eb3117ab52f8e959" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Camera -->
-  <project path="external/libcamera" name="raspberry-vanilla/android_external_libcamera" remote="github" revision="android-16.0" />
-  <project path="external/libpisp" name="raspberry-vanilla/android_external_libpisp" remote="github" revision="android-16.0" />
-  <project path="external/libyaml" name="raspberry-vanilla/android_external_libyaml" remote="github" revision="android-16.0" />
-  <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="android-16.0" />
+  <project path="external/libcamera" name="raspberry-vanilla/android_external_libcamera" remote="github" revision="b82ac76f300fbbef98219de408044c76c0b61107" />
+  <project path="external/libpisp" name="raspberry-vanilla/android_external_libpisp" remote="github" revision="36524c88079032902cddedacabb896e85f576bfb" />
+  <project path="external/libyaml" name="raspberry-vanilla/android_external_libyaml" remote="github" revision="7a3ada6cb3e269844019231daa6728422947377f" />
+  <project path="external/libyuv_chromium" name="raspberry-vanilla/android_external_libyuv_chromium" remote="github" revision="0e419c1b22c4f8827205ffcd8e53e3bd8edd8d34" />
 
   <!-- FFmpeg -->
-  <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="android-16.0" />
-  <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="android-16.0" />
-  <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-16.0" />
+  <project path="external/ffmpeg" name="raspberry-vanilla/android_external_ffmpeg" remote="github" revision="dc28ea5ec794c3a412ca534b7268f5a643dd788c" />
+  <project path="external/ffmpeg_codec2" name="raspberry-vanilla/android_external_ffmpeg_codec2" remote="github" revision="1cb7fcee97f3cedd46857f3cd8354777bed307b2" />
+  <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="0ad91b71bcff531a6f3a98f028fe2bcad033c332" />
 
   <!-- Graphics -->
   <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/minigbm" />
-  <project path="external/drm_hwcomposer" name="raspberry-vanilla/android_external_drm_hwcomposer" remote="github" revision="android-16.0" />
-  <project path="external/mesa3d-rpi" name="raspberry-vanilla/android_external_mesa3d-rpi" remote="github" revision="android-16.0" />
-  <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-16.0" />
+  <project path="external/drm_hwcomposer" name="raspberry-vanilla/android_external_drm_hwcomposer" remote="github" revision="56cb319f299dadc6d227c0362e338ba1e07ae6db" />
+  <project path="external/mesa3d-rpi" name="raspberry-vanilla/android_external_mesa3d-rpi" remote="github" revision="30c4b79f70f8a6ce91f160a3b150dc02ac212c91" />
+  <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="7bb4def042e5276b26399aee569c65fa269bc44f" />
 
   <!-- v4l2_codec2 -->
   <remove-project name="platform/external/v4l2_codec2" />
-  <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-16.0" />
+  <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="eb594b7f46997c7d5f3fe8bf36011b507b0746dc" />
 
 </manifest>
