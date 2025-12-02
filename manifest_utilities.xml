@@ -3,10 +3,10 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi utils -->
-  <project path="external/raspberrypi-utils" name="raspberry-vanilla/android_external_raspberrypi-utils" remote="github" revision="android-16.0" />
+  <project path="external/raspberrypi-utils" name="raspberry-vanilla/android_external_raspberrypi-utils" remote="github" revision="09032c316410d7475f78e4a0092d0f62ad81d8e9" />
 
   <!-- V4L utils -->
   <remove-project name="platform/external/v4l-utils" />
-  <project path="external/v4l-utils" name="raspberry-vanilla/android_external_v4l-utils" remote="github" revision="android-16.0" />
+  <project path="external/v4l-utils" name="raspberry-vanilla/android_external_v4l-utils" remote="github" revision="b9a68f0b37250f57b7b61becb37250d668693324" />
 
 </manifest>
